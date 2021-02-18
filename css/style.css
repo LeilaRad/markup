@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+.main-container-general {
+	width: 1430px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.menu-item {
+	list-style: none;
+	display: flex;
+}
+
+.menu-points {
+	padding-right: 2rem;
+}
+
+.menu-points > a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.container {
+	background-image: url("../img/background-img.jpg");
+	background-repeat-y: no-repeat;
+	height: 25vh;
+	opacity: 0.5;
+	display: flex;
+	justify-content: center;
+	padding-top: 5rem;
+	padding-right: 17.85rem;
+}
+
+.container:hover {
+	opacity: 1.0;
+}
+
+
+.main-container > h1{
+	background: #000;
+	color: #fff;
+}
+
+.container-services {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background: #EBEBEB;
+	padding-top: 7.14rem;
+	box-sizing: border-box;
+}
+
+.container-services p,
+.container-services h2 {
+	margin-left: 7rem;
+}
+
+.container-services h2 {
+	font-size: 28px;
+}
+
+.container-services > p {
+	color: #BDBDBD;
+	padding-bottom: 1.4rem;
+}
+
+.services-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 4.3rem;
+}
+
+.services-item {
+	padding-right: 5.7rem;
+	width: 17.85rem;
+	margin: 1.4rem;
+}
+
+.services-item:hover {
+	opacity: .5;
+}
+
+.services-item > a {
+	text-decoration: none;
+	color: #000;
+}
+
+h2 > span {
+	color: #005FA3;
+}
+
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	padding-top: 5.71rem;
+}
+
+.text-about{
+	flex-basis: 42.85rem;
+	padding-right: 13.57rem;
+	padding-left: 7rem;
+}
+
+.text-about > h2 {
+	font-size: 42px;
+	padding-bottom: .5em;
+}
+
+.text-grey {
+	color: #BDBDBD;
+	padding-bottom: 1.4rem; 
+}
+
+.about-items {
+	width: 40%;
+	height: 255px;
+	background: #EBEBEB;
+	text-align: center;
+	margin: 0 2.85rem 2.85rem 0;
+	box-sizing: border-box;
+}
+
+.about-items > a {
+	padding-top: 7.14rem;
+	display: block;
+	color: #005FA3;
+}
+
+.about-items:hover a {
+	color: #fff;
+}
+
+.about-items:hover {
+	background: #005FA3;
+	color: #fff;
+}
+
+.about-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	padding-right: 3.33rem;
+}
+
+.number-about {
+	font-size: 55px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	padding-top: 0.70rem;
+}
+
+.clients-block-general {
+	height: 530px;
+	background: #EBEBEB;
+	display: flex;
+}
+
+.clients-block {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	flex-direction: column;
+	padding-top: 3.5rem;
+	width: 1100px;
+
+}
+
+.clients-block > p {
+	color: #BDBDBD;
+	padding-bottom: 1.5rem;
+}
+
+.clients-block > h2 {
+	font-size: 48px;
+}
+
+.clients-container {
+	padding-top: 4rem;
+}
+
+.clients-img {
+	width: 100%;
+	margin-right: 20px;
+}
+
+:root {
+	 --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.05);
+}
+
+ .thanks-container {
+	 height: 50vh;
+	 background-color: #fff;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.thanks-container:hover {
+	background: #005fa3;
+}
+
+ .review {
+	 color: #000;
+	 font-size: 1.4rem;
+	 padding: 3rem;
+	 position: relative;
+	 background-color: #fff;
+	 overflow: hidden;
+	 flex: 0 0 50%;
+	 z-index: 1;
+}
+
+ @media screen and (max-width: 56.25em) {
+	 .review {
+		 padding: 2rem;
+	}
+}
+
+ @media screen and (max-width: 37.5em) {
+	 .review {
+		 padding: 1rem;
+		 font-size: 1.2rem;
+	}
+}
+
+ .review::before {
+	 content: "\201c";
+	 position: absolute;
+	 left: -0.9rem;
+	 top: -2.5rem;
+	 font-size: 13rem;
+	 color: #005fa3;
+	 line-height: 1;
+	 z-index: 1;
+	 font-family: sans-serif;
+}
+
+ .review review__text {
+	 margin-bottom: 2rem;
+	 z-index: 2;
+	 position: relative;
+}
+
+ @media screen and (max-width: 56.25em) {
+	 .review review__text {
+		 margin: 0;
+		 padding: 1rem;
+	}
+}
+
+ .review__person {
+	 display: flex;
+	 align-items: center;
+}
+
+ .review__photo {
+	 height: 4.5rem;
+	 width: 4.5rem;
+	 border-radius: 50%;
+	 margin-right: 1rem;
+}
+
+ @media screen and (max-width: 37.5em) {
+	 .review__photo {
+		 margin-right: 0.5rem;
+	}
+}
+
+ .review__info {
+	 display: flex;
+	 flex-flow: row wrap;
+	 margin-right: auto;
+}
+
+ .review__info--name {
+	 flex: 0 0 80%;
+	 font-size: 1.1rem;
+	 text-transform: uppercase;
+	 font-weight: 600;
+	 margin-bottom: 0.5rem;
+}
+
+ @media screen and (max-width: 37.5em) {
+	 .review__info--name {
+		 font-size: 0.9rem;
+	}
+}
+
+ .review__info--date {
+	 font-size: 0.9rem;
+}
+
+ @media screen and (max-width: 37.5em) {
+	 .review__info--date {
+		 font-size: 0.7rem;
+	}
+}
+
+ .review__rating {
+	 color: var(--color-grey-dark);
+	 font-size: 2.2rem;
+	 font-weight: 300;
+}
+
+.reviews {
+	height: 623px;
+	background-image: url("../img/footer.png");
+	display: flex;
+	align-items: center;
+}
+
+.contact-general {
+	display: flex;
+    justify-content: center;
+	width: 1220px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.contact-name {
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-name,
+.form-email,
+textarea {
+	width: 435px;
+	margin: 1rem;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+.form-name,
+.form-email {
+	height: 35px;
+	padding: 5px;
+}
+
+textarea {
+	height: 85px;
+	padding: 5px;
+}
+
+.submit {
+	width: 160px;
+	height: 27px;
+	background-color: #005fa3;
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	cursor: pointer;
+}
+
+.contact-general > .feedback-contact {
+	display: flex;
+	flex-direction: column;
+	padding-right: 80px;
+}
+
+.feedback-contact p {
+  margin-bottom: 13px;
+  color: #888888;
+}
+
+.feedback-contact h3 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.phone-email {
+	display: flex;
+	padding-top: 2rem;
+}
+
+.phone-number {
+	padding-right: 3rem;
+	padding-top: .45rem;
+}
+
+.phone-number:before {
+	content: '☎';
+	padding-right: 1rem;
+}
+
+.email:before {
+	content: '✉';
+	font-size: 22px;
+	padding-right: 1rem;
+}
+
+.footer {
+	height: 80px;
+	display: flex;
+	width: 1200px;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+}
+
+
